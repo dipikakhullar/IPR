@@ -5,6 +5,9 @@ conda activate IPR
 # pip install vllm==0.4.0.post1
 # pip install torch==2.1.0 torchvision==0.16.0 torchaudio==2.1.0 --index-url https://download.pytorch.org/whl/cu118
 
+pip install torch==2.1.0 torchvision==0.16.0 torchaudio==2.1.0 \
+    --index-url https://download.pytorch.org/whl/cu121
+    
 cd textworld
 pip install .
 cd ..
@@ -17,7 +20,9 @@ cd eval_agent
 pip install -r requirements.txt
 cd ..
 
-pip install torch==2.1.0 torchvision==0.16.0 torchaudio==2.1.0 --index-url https://download.pytorch.org/whl/cu118
+
+
+#pip install torch==2.1.0 torchvision==0.16.0 torchaudio==2.1.0 --index-url https://download.pytorch.org/whl/cu118
 
 cd envs/webshop
 pip install -e .
